@@ -2,12 +2,12 @@
 3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
 13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z" class="icon-module--icon--1ihz7"></path></svg></span></button></span></div></header><div class="content"><div class="post-module--post--28Mq2"><div class="post-module--postContent--1bfnt"><h1 class="post-module--title--3XBo2">React State Management And Life Cycle - Part 1</h1><div class="post-module--meta--3YtjE">02 April 2020<!-- --> <!-- -->— Written by <!-- -->James<div class="post-module--tags--3RbqF"><a href="/tag/react/"><span class="post-module--tag--16U9p">#<!-- -->react</span></a><a href="/tag/programming/"><span class="post-module--tag--16U9p">#<!-- -->programming</span></a></div></div><div><p>Last time, when I was taking a technical interview and working on a take-home test, I encountered an issue related to state management and lifecycle of React. This article is a summary of how we need to manage state in React, and life cycle in React.</p>
 <hr>
-<h2>Functional and Class Components</h2>
+<h2>Function and Class Components</h2>
 <ul>
 <li>In React, we make a component using a function (like a function in Javascript) or a class. For example,</li>
 </ul>
 <h3>Example</h3>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">// A functional component
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">// A function component
 function Hello(props) {
     return (
         &lt;div&gt;
@@ -28,10 +28,10 @@ class Hello extends React.component {
     }
 }</code></pre></div>
 <ul>
-<li>There are some differences between a functional and class component, but I will dicuss more about it another article.</li>
+<li>There are some differences between a function and class component, but I will dicuss more about it another article.</li>
 </ul>
 <hr>
-<h2>Functional Component</h2>
+<h2>Function Component</h2>
 <ul>
 <li>Using a hook which is added in React 16.8, you can declare a variable for saving and updating state.</li>
 </ul>
@@ -79,7 +79,7 @@ class Result extends React.component {
     }
 }</code></pre></div>
 <ul>
-<li>If we change the functional component into the class component style, it will be looked like the above.</li>
+<li>If we change the function component into the class component style, it will be looked like the above.</li>
 <li>
 <p>However, two differences must be discussed</p>
 <ul>
@@ -89,12 +89,12 @@ class Result extends React.component {
 </li>
 </ul>
 <hr>
-<h2>Functional vs Class Components (Update)</h2>
+<h2>Function vs Class Components (Update)</h2>
 <ul>
 <li>
-<p>Functional components use a hook to save and update a state</p>
+<p>Function components use a hook to save and update a state</p>
 <ul>
-<li><a href="https://reactjs.org/docs/hooks-rules.html">In fact, a hook can only be used in a functional component or from custom hooks</a></li>
+<li><a href="https://reactjs.org/docs/hooks-rules.html">In fact, a hook can only be used in a function component or from custom hooks</a></li>
 <li>Class components use <code class="language-text">this.state</code> and <code class="language-text">this.setState({});</code> to update a state</li>
 </ul>
 </li>
@@ -129,17 +129,17 @@ const Result = (props) =&gt; {
 <li>In this case, <code class="language-text">user</code> will only have <code class="language-text">id</code> property, and the property with <code class="language-text">name</code> key will be removed.</li>
 <li>However, <code class="language-text">this.setState({})</code> in class component will only modify applicable properties.</li>
 <li>
-<p>Any data type can be assigned to a state variable in a functional component</p>
+<p>Any data type can be assigned to a state variable in a function component</p>
 <ul>
 <li><code class="language-text">this.state</code> in a class component is always an object.</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h2>Functional vs Class Components (Update using a previous value)</h2>
+<h2>Function vs Class Components (Update using a previous value)</h2>
 <h3>Example 1</h3>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">```
-// Functional component
+// Function component
 import React, {useState} from &#39;react&#39;;
 
 const Result = (props) =&gt; {
@@ -185,9 +185,9 @@ class Result extends React.component {
 ```</code></pre></div>
 <ul>
 <li>
-<p><a href="%22https://blog.logrocket.com/how-to-get-previous-props-state-with-react-hooks/%22">We can also create a custom hook to update a state value in a functional component.</a></p>
+<p><a href="%22https://blog.logrocket.com/how-to-get-previous-props-state-with-react-hooks/%22">We can also create a custom hook to update a state value in a function component.</a></p>
 <h3>Example 2</h3>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">// Functional component
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">// Function component
 import React, {useState, useRef, useEffect} from &#39;react&#39;;
 
 function usePrevious(val) {
