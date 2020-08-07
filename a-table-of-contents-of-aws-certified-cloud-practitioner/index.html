@@ -125,11 +125,11 @@
 <h2>Simple Queue Service</h2>
 <h2>Customer Engagement</h2>
 </li>
-<li>
-<h2>Amazon Connect</h2>
+<li>Amazon Connect</li>
+</ul>
 <h1>Architecture</h1>
 <h2>5 Pillars</h2>
-</li>
+<ul>
 <li>Security</li>
 <li>Reliability</li>
 <li>Performance Efficiency</li>
@@ -204,12 +204,194 @@
 </li>
 <li>Automation</li>
 <li>Respond to events efficiently</li>
+<li>Define and meet standards</li>
+</ul>
+<h1>Security</h1>
+<h2>Introduction</h2>
+<ul>
+<li>Resilient infrastructure for high security without paying much</li>
 <li>
-<h2>Define and meet standards</h2>
+<p>Network security</p>
+<ul>
+<li>Built-in firewalls</li>
+<li>Encryption</li>
+<li>Private or dedicated connection</li>
+<li>DDoS mitigation</li>
+</ul>
+</li>
+<li>
+<p>Inventory and config management</p>
+<ul>
+<li>Template definition and management tools</li>
+<li>Inventory and config tools</li>
+<li>Deployment tools</li>
+</ul>
+</li>
+<li>
+<p>Data encryption</p>
+<ul>
+<li>Key management options</li>
+<li>Hardware-based cryptographic key storage options</li>
+</ul>
+</li>
+<li>
+<p>Access control</p>
+<ul>
+<li>IAM</li>
+<li>MFA</li>
+<li>Federated accounts</li>
+<li>Amazon Cognito</li>
+<li>AWS SSO</li>
+</ul>
+</li>
+<li>
+<p>Monitoring and Logging</p>
+<ul>
+<li>AWS CloudTrail</li>
+<li>Streamline investigation</li>
+<li>Notification alert</li>
+</ul>
+</li>
+<li>AWS Marketplace</li>
+</ul>
+<h2>Shared Responsibility Model</h2>
+<ul>
+<li>
+<p>AWS's responsibility</p>
+<ul>
+<li>Physical</li>
+<li>
+<p>Network</p>
+<ul>
+<li>VPC, scalability, etc.</li>
+<li>3rd-party audit</li>
+</ul>
+</li>
+<li>Hypervisor (partially)</li>
+</ul>
+</li>
+<li>
+<p>Customer's responsibility</p>
+<ul>
+<li>Hypervisor (partially)</li>
+<li>Guest OS</li>
+<li>Application</li>
+<li>User data</li>
+</ul>
+</li>
+<li>
+<p>Improvement using technology</p>
+<ul>
+<li>Supporting AWS services from IAM, logging, monitoring to encryption</li>
+</ul>
+</li>
+<li>
+<p>Compliance requirements</p>
+<ul>
+<li>Benefits of using cloud-based governance</li>
+</ul>
 </li>
 </ul>
-<p>(This document will be updated shortly)</p>
-<h1>Security</h1>
+<h2>IAM</h2>
+<h3>Authentication</h3>
+<ul>
+<li>User (A permanent operator)</li>
+<li>Group: a collection of users</li>
+<li>
+<p>Role (A temporary operator)</p>
+<ul>
+<li>
+<p>Role is NOT about permission (= authorization)</p>
+<h3>Authorization</h3>
+</li>
+</ul>
+</li>
+<li>
+<p>Policy docs</p>
+<ul>
+<li>For specific or broad APIs</li>
+<li>Explicit deny vs. Implicit deny</li>
+<li>
+<p>Using this concept, a security manager can simply detach any policy docs (i.e, permissions) from operators (user, group or role)</p>
+<ul>
+<li>The above is possible, if a root user is protected, and not used </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Amazon Inspector</h2>
+<ul>
+<li>Assesses applications for vulnerabilities </li>
+<li>Provide a detailed report with security findings and suggestions</li>
+<li>
+<p>AWS does NOT guarantee that following the recommendation is always effective</p>
+<ul>
+<li>It is a customer's responsibility</li>
+</ul>
+</li>
+<li>Accessible using 1) the Console 2) SDK 3) API 4) CLI </li>
+</ul>
+<h2>AWS Shield</h2>
+<ul>
+<li>A managed Distributed Denial of Service (DDoS) protection service</li>
+<li>Dos vs. DDos</li>
+</ul>
+<h3>Shield Tiers</h3>
+<ul>
+<li>
+<p>AWS Shield Standard (No charge)</p>
+<ul>
+<li>Automatically protect any AWS resource and region</li>
+<li>Automated mitigation techniques without latency impact</li>
+<li>Self-service  </li>
+</ul>
+</li>
+<li>
+<p>AWS Shield Advance (24/7 DDoS response team + additional capacity to protect)</p>
+<ul>
+<li>a.k.a DRT team</li>
+<li>available to call them before, during, after any attacks</li>
+<li>Application layer attack can be handled with additional capacity</li>
+<li>Monitoring and counselling about relevant AWS services </li>
+</ul>
+</li>
+<li>Each Standard and Advanced tiers include different services for 1) Route 53 2) CloudFront or ELB and 3) Elastic IP address</li>
+</ul>
+<h2>Compliance</h2>
+<h3>AWS</h3>
+<ul>
+<li>
+<p>Risk management</p>
+<ul>
+<li>Identify risks</li>
+<li>Assess internal / external risks</li>
+<li>Implement appropriate measures</li>
+<li>Maintain security policy</li>
+</ul>
+</li>
+<li>
+<p>Control environment</p>
+<ul>
+<li>Includes policies, processes and control activities </li>
+<li>Integrates cloud-specific controls</li>
+</ul>
+</li>
+<li>
+<p>Information security</p>
+<ul>
+<li>Designed to protect 1) confidentiality 2) intergrity 3) availability</li>
+<li>
+<p>and publish security whitepapers</p>
+<h3>Customers</h3>
+</li>
+</ul>
+</li>
+<li>Need to review trusted info + documents for compliance requirements</li>
+<li>Design and implement control objectives</li>
+<li>Identify and document controls by 3rd party</li>
+<li>Check and review they are operating effectively</li>
+</ul>
 <h1>Pricing &#x26; Support</h1></div><div class="navigation-module--navigation--3Zfju"><span class="navigation-module--button--28kp3"><a href="/android-app-crashed-by-react-native-maps-and-firebase"><span class="navigation-module--buttonText--1Xod2">Android App Crashed by React Native Maps and Firebase</span><span class="navigation-module--iconNext--3xyJ-">→</span></a></span></div></div></div></div><footer><div>James Yoo</div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
   
   function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='UA-165380384-1',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
