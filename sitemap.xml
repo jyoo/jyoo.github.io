@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://jyoo.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/showcase</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/a-table-of-contents-of-aws-certified-cloud-practitioner</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/android-app-crashed-by-react-native-maps-and-firebase</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/restoring-a-hacked-website</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/slugify-in-python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/summary-of-basic-sorting-algorithms</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/react-state-management-and-life-cycle-part-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/react-state-management-and-life-cycle-part-1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/asynchronous-in-javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/deploying-react-spa-in-10-minutes-using-azure</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/making-single-page-app-in-react-with-django</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/django</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/programming</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/programming/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/azure</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/cloud</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/algorithm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/algorithm-ds</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/wordpress</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/android</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/firebase</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jyoo.github.io/tag/aws</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>
